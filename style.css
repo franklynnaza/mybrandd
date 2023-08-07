@@ -84,11 +84,12 @@ header{
     border-bottom: 1px solid var(--txxtcolor);
 }
 .header{
-   
+   -webkit-backdrop-filter: blur(10px);
 backdrop-filter:blur(10px) ;
 position: fixed;
 top: 0;
 left: 0;
+
 box-shadow: 0 2 900px  rgb(104, 103, 103) ;
 width: 99.9%;
 z-index: 10;
@@ -1085,6 +1086,8 @@ footer p{
              .try-bg{
                 position: relative;
                 left: 1%;
+                transform: translateX(-7px);
+                
                 
             }
             
@@ -1095,7 +1098,7 @@ footer p{
                 background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
                 width: 30%;
                 height: 205px;
-                opacity: .7;              
+                opacity: 100%;              
                 filter: blur(160px);
                 border-radius: 50%;
                 top: 20px;
@@ -1104,6 +1107,7 @@ footer p{
             
             .try-bg-3{
                 position: relative;
+               
             }
             .try-bg-2::before{
                 content: "";
@@ -1111,7 +1115,7 @@ footer p{
                 background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
                 width: 60%;
                 height: 205px;
-                opacity: .4;
+                opacity: 9;
                 filter: blur(100px);
                 border-radius: 50%;
                 top: 80px;
@@ -1124,7 +1128,7 @@ footer p{
                 background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
                 width: 40%;
                 height: 305px;
-                opacity: .4;
+                opacity: 9;
                 z-index: -1;
                 filter: blur(100px);
                 border-radius: 50%;
@@ -1134,7 +1138,9 @@ footer p{
           
             .try-bg-5{
                 position: relative;
-                left: -20%;  
+                left: -20%; 
+                transform: translateX(-7px);
+                
             }
             .try-bg-5::before{
                 content: "";
@@ -1142,7 +1148,7 @@ footer p{
                 background: linear-gradient(267.56deg, #ac5ec8 22.11%, #e04eca 40.73%, #ec78cb 54.78%, #e643ef 69.88%, #dcdad8 8.56%);
                 width: 100%;
                 height: 205px;
-                opacity: .4;
+                opacity: .9;
                 filter: blur(180px);
                 border-radius: 50%;
                 top: -400px;
@@ -1150,7 +1156,9 @@ footer p{
             }
             .try-bg-6{
                 position: relative;
-                left: -200px;  
+                left: -200px;
+                
+                 
             }
             .try-bg-6::before{
                 content: "";
@@ -1158,7 +1166,7 @@ footer p{
                 background: linear-gradient(2.56deg, #08c985 2.11%, #09ce3b 4.73%, #02e424 5.78%, #008c0c 69.88%, #046a1d 8.56%);
                 width: 100%;
                 height: 205px;
-                opacity: .4;
+                opacity: .9;
                 filter: blur(180px);
                 border-radius: 50%;
                 top: -150px;
@@ -1167,6 +1175,8 @@ footer p{
             .try-bg-7{
                 position: relative;
                 left: -200px;  
+                
+                
             }
             .try-bg-7::before{
                 content: "";
@@ -1174,7 +1184,7 @@ footer p{
                 background: linear-gradient(2.56deg, #0260ee 2.11%, #06deff 4.73%, #014273 5.78%, #052444 69.88%, #7cafc9 8.56%);
                 width: 100%;
                 height: 205px;
-                opacity: .4;
+                opacity: .9;
                 filter: blur(180px);
                 border-radius: 50%;
                 top: -290px;
@@ -1182,7 +1192,8 @@ footer p{
             }
             .try-bg-8{
                 position: relative;
-                left: -200px;  
+                left: -200px; 
+                
             }
             .try-bg-8::before{
                 content: "";
@@ -1190,7 +1201,7 @@ footer p{
                 background: linear-gradient(2.56deg,#fc42ef 2.11%, #920283 4.73%, #ff0088 5.78%, #400254 69.88%, #b9c3c8 8.56%);
                 width: 100%;
                 height: 205px;
-                opacity: .4;
+                opacity: .9;
                 filter: blur(180px);
                 border-radius: 50%;
                 top: -1500px;

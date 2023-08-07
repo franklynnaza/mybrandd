@@ -84,6 +84,7 @@ header{
     border-bottom: 1px solid var(--txxtcolor);
 }
 .header{
+    
    -webkit-backdrop-filter: blur(10px);
 backdrop-filter:blur(10px) ;
 position: fixed;
@@ -157,7 +158,7 @@ color: white;
 .hero h5{
 font-size: 30px;
 font-weight: 10;
-padding-top: 25px;
+line-height: 60px;
 color: var(--txtcolor);
 }
 .hero .btn{
@@ -520,7 +521,7 @@ flex: 0 0 100% !important;
 
 
 .call-ta{  
-    max-width: 700px;
+    width: 650px;
     margin-top: -10px;
     z-index: 9;
     color: var(--txtcolor);
@@ -540,6 +541,7 @@ flex: 0 0 100% !important;
     align-items: center;
 }
 .smaller{
+    line-height: 70px;
    font-weight: 200;
 }
 .beside-testimonial .btn{
@@ -611,7 +613,7 @@ i{
     justify-content: space-around;
 }
 .tried{
-    padding-bottom: 80px;
+  height: 400px;
     background-color: var(--bgcolor);
 }
 .tried h1
@@ -671,7 +673,7 @@ font-size: 40px;
 }
 .procedures h1{
     color: white;
-    margin-bottom: 20px;
+    line-height: 70px;
     font-weight: 400;
     font-size: 50px;
     max-width: 900px;
@@ -830,6 +832,7 @@ margin-top: 20px;
 }
 .frequent h1{
     font-size: 40px;
+    line-height: 40px;
 }
 .cal-ta{
     text-align: left !important;
@@ -844,10 +847,11 @@ margin-top: 20px;
 .foot{
     text-align: center;
     margin-top: 80px;
+    height: 250px;
     color: var(--txtcolor);
 }
 .foot h1,h2{
-    margin-top: 20px;
+   line-height: 70px;
 }
 .foot h1{
     font-size: 40px;
@@ -855,10 +859,7 @@ margin-top: 20px;
 .foot h2{
     font-weight: 400;
 }
-.foot .btn{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+
 hr{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(75, 104,104,55), rgba(0,0,0,0)) !important;
     height: 1px;
@@ -1012,8 +1013,10 @@ footer p{
             .call-ta{                  
                 margin-top: 30px;
             }
+            
             .faq .call-ta{                  
                 margin-top: 20px;
+                
             }
             .action{
                 
@@ -1213,7 +1216,8 @@ footer p{
                 left: 0;
                 top: 0;
                 display: block;
-                backdrop-filter:blur(200px) ;
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter:blur(20px) ;
                 width: 100%;
                 z-index: 19;
                 height: 100%;

@@ -59,20 +59,11 @@ section{
     flex-wrap: wrap;
 
 }
-.logo{
-    display: flex;
-   
-    
 
-}
-.logotxt{
-    font-size: 20px;
-   margin-top: 20px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f2eded;
-}
+
 .logo img{
-    padding-bottom: 10px;
+    padding-bottom: 4px;
+    padding-top: 5px;
 }
 header{
     padding-top: 0px;
@@ -80,13 +71,13 @@ header{
     display: flex;
     justify-content: center;
   justify-content: space-between;
-  height: 50px;
+  height: 55px;
     border-bottom: 1px solid var(--txxtcolor);
 }
 .header{
     
    -webkit-backdrop-filter: blur(10px);
-backdrop-filter:blur(10px) ;
+backdrop-filter:  blur(10px) ;
 position: fixed;
 top: 0;
 left: 0;
@@ -153,6 +144,8 @@ color:var(--txtcolor);
 font-size: 60px;
 font-weight: 300px;
 margin-top:150px;
+padding-left: 100px;
+padding-right: 100px;
 color: white;
 }
 .hero h5{
@@ -235,10 +228,11 @@ margin-top: 30px;
     padding: 20px;
     align-items: center;
     text-align: center;
-    width: 250px;
-    height: 200px;
+    width: 215px;
+    height: 180px;
+    border-radius: 15px;
     margin-bottom: 20px;
-    border: 1px solid var(--txtcolor);
+    border: 1px solid var(--txxtcolor);
     position: relative;
 cursor: pointer;
 }
@@ -247,28 +241,6 @@ cursor: pointer;
   
 }
 .container::before{
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.06),
-        transparent 30%
-    );
-    content: "";
-    border-radius: inherit;
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 500ms;
-    left: 0;    
-   top: 0;
-
-}
-.service-card:hover::before{
-    opacity: 100%;
-  
-}
-.service-card::before{
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
         rgba(255, 255, 255, 0.06),
@@ -321,7 +293,9 @@ cursor: pointer;
     z-index: -1;
 }
 .why-us{
-    color: var(--txtcolor);
+    color: unset;
+    margin: auto;
+    background: linear-gradient(90deg, rgb(255, 248, 85) 0.04%, rgb(70, 227, 183) 100.04%) text;
     padding-bottom: 20px;
     padding-top: 90px;
     color: white;
@@ -390,7 +364,7 @@ flex: 0 0 100% !important;
 .try-bg-3::before{
     content: "";
     position: absolute;
-    background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+    background: linear-gradient(360deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 99.78%, #133E04 69.88%, #9BCFF2 99.56%);
     width: 764px;
     height: 305px;
     opacity: .4;
@@ -413,7 +387,7 @@ flex: 0 0 100% !important;
 .try-bg::before{
     content: "";
     position: absolute;
-    background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+    background: linear-gradient(360deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 94.78%, #00c3ff 99.88%, #9BCFF2 89.56%);
     width: 404px;
     height: 205px;
     opacity: .7;
@@ -429,7 +403,7 @@ flex: 0 0 100% !important;
 .try-bg-2::before{
     content: "";
     position: absolute;
-    background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+    background: linear-gradient(360deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
     width: 404px;
     height: 205px;
     opacity: .4;
@@ -548,7 +522,7 @@ flex: 0 0 100% !important;
 }
 .question{
     display: flex;
-    height: 20px;
+    height: 30px;
     padding-top: 10px;
    margin-bottom: 20px;
    cursor: pointer;
@@ -556,13 +530,14 @@ flex: 0 0 100% !important;
    justify-content: space-between;
 }
 .question h2{
+    margin-top: 30px;
     font-weight: 100;
 }
 .answer h4{
     font-weight: 100;
 }
 .action{
-    background-color: #1a181f;
+   
     
     margin-top: 10px;
     border: 1px solid var(--txxtcolor);
@@ -613,6 +588,7 @@ i{
 }
 .tried{
     padding-bottom: 80px;
+    z-index: 100;
     background-color: var(--bgcolor);
 }
 .tried h1
@@ -670,7 +646,7 @@ font-size: 40px;
 .names h4,h5{
     color: var(--txtcolor);
 }
-.procedures h1{
+.procedure-heading h1{
     color: white;
     margin-bottom: 20px;
     font-weight: 400;
@@ -683,16 +659,16 @@ font-size: 40px;
    
     display: block;
     color: var(--txtcolor);
-    justify-content: flex-start;
+    justify-content: space-between;
 }
-.procedures h3{
+.procedure-heading h3{
     color: var(--txtcolor);
     max-width: 900px;
     font-weight: 200;
 }
 .procedure-heading{
-   position: relative;
-   left: 30px;
+   padding-left: 70px;
+   padding-right: 70px;
    margin-bottom: 20px;
 }
 .procedure h5{
@@ -703,12 +679,52 @@ font-size: 40px;
 .container h3, h2,h5{
 margin-bottom: 10px;
 }
-.container p{
-    margin-bottom: 20px;
-    border-radius: 50%;
+.container .q{
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-image:linear-gradient(135deg,#47b8ff ,#052c7a ) !important;
+    box-shadow: 0 0 35px #51a9e0 ;
     display: inline-block;
     padding: 17px 20px 17px;
-    border: 1px solid var(--txtcolor);
+   
+}
+.container .w{
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-image:linear-gradient(135deg,#5bed53 ,#078101 ) !important;
+    box-shadow: 0 0 35px #5bed53 ;
+    
+    display: inline-block;
+    padding: 17px 20px 17px;
+   
+}
+.container .e{
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-image:linear-gradient(135deg,#f74f4f ,#e60808 ) !important;
+    box-shadow: 0 0 35px #f74f4f ;
+    
+    display: inline-block;
+    padding: 17px 20px 17px;
+   
+}
+.container .r{
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-image:linear-gradient(135deg,#eb8055 ,#d73d00 ) !important;
+    box-shadow: 0 0 35px #eb8055 ;      
+    display: inline-block;
+    padding: 17px 20px 17px;
+   
+}
+.container .t{
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-image:linear-gradient(135deg,#ec7897 ,#f20141 ) !important;
+    box-shadow: 0 0 35px #ec7897 ;
+    display: inline-block;
+    padding: 17px 20px 17px;
+   
 }
 
 .procedure{
@@ -767,32 +783,71 @@ font-weight: 400;
     flex-wrap: wrap;
     justify-content: space-around  ;
 }
-
-
-.service{
-    color: var(--txtcolor);
+.d-flex{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
     justify-content: space-evenly;
 }
 
+.service{
+    margin-top: 80px;
+    color: var(--txtcolor);
+    
+    
+}
+.service-card:hover::before{
+    opacity: 100%;
+  
+}
+
+.service-card::before{
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 30%
+    );
+    content: "";
+    border-radius: inherit;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 500ms;
+    left: 0;    
+   top: 0;
+
+}
+
+
 .service-card{
-    width: 300px;
-    margin-top: 24px;
-    align-items: center;
+    width: 320px;
+    margin-bottom: 50px;
+    align-items: flex-start;
     justify-content: center;
-    padding: 20px;
-    padding-top: 40px;
+   text-align: start !important;
+    padding-top:0px;
     display: block;
+    color: white;
    height: 250px;
    border-radius: 15px;
    position: relative;
+   background-color: #18171b;
 cursor: pointer;
    border: 1px solid var(--txxtcolor);
     text-align: center;
 }
-.service-card h5{
+.service-card i{
+   color: white;
+   font-size: 15px;
+   padding-right: 10px;
+}
+.card-bottom{
+   position: relative;
+   left: 20px;
+}
+
+.service-card .hh{
     max-height: 0px;
     overflow: hidden;
     margin-top: 10px;
@@ -800,21 +855,38 @@ cursor: pointer;
     transition: max-height .5s ease ;
 }
 .service-card h4{
-font-weight: 200;
-margin-top: 20px;
+font-weight: 100;
+font-size: 14px;
+color: rgb(220, 215, 215);
+padding-left: 30px;
+
+}
+.firstcard{
+   position: relative;
+   top: -40px;
+}
+.secondcard{
+   position: relative;
+   top: -50px;
 }
 .service-card h3{
-    font-weight: 400;
-    font-size: larger;
-    margin-top: 10px;
+    font-weight: 800;
+    margin-bottom: 7px;
+    font-size: 15px;
+   
 }
-.service-card:hover h5{
+.service-card:hover .hh{
     max-height: 30px;
     
 }
-.service-card:hover i{
- color: white;
+.service-card:hover span i{
+ color: rgb(0, 170, 255);
  
+}
+.hh i {
+    font-size: 10px;
+    padding-bottom: 20px;
+
 }
 
 .faq{
@@ -897,6 +969,18 @@ footer p{
 .footer i{
     margin-right: 3px;
 }
+.aside{
+    text-align: center !important;
+    display: grid;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+.aside div{
+    width: 100px;
+}
+
+
 
 @media(max-width:1157px){
     .nav-section i {
@@ -937,12 +1021,18 @@ footer p{
         .hero h1{
             font-size: 37px;
             font-weight: 600;
-            margin-top:60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 50px;
+            margin-top:100px;
             }
             .hero h5{
                 font-size: 20px;
                 font-weight: 1;
                 padding-top: 16px;
+                }
+                .service-card{
+                    margin-bottom: 20px;
                 }
                 .why-us{
                     padding-top: 60px;
@@ -1028,6 +1118,21 @@ footer p{
                 align-items: center;
                 padding: 5px 2px ;
             }
+            .container{
+             
+                width: 250px;
+                height: 200px; 
+            cursor: pointer;
+            }
+            .container h3, h2,h5{
+                margin-bottom: 20px;
+                }  
+                .container h2{
+                    font-size: 30px;
+                } 
+                .container h5{
+                    font-size: 17px;
+                } 
             .question h2{
                 font-weight: 200;
                 font-size: 18px;
@@ -1054,6 +1159,8 @@ footer p{
             .procedure-heading{
                 text-align: center;
                 left: 0px;
+                padding-left: 2px;
+                padding-right: 2px;
             }
             .procedure-heading h1{
                 font-size: 40px;
@@ -1098,7 +1205,7 @@ footer p{
                 content: "";
                 position: absolute;
                
-                background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+                background: linear-gradient(360deg,  #9aa6d3 2.11%, #5E7CF1 40.73%, #1E6BFF 94.78%, #00c3ff 99.88%, #9BCFF2 99.56%);
                 width: 30%;
                 height: 205px;
                 opacity: 100%;              
@@ -1115,7 +1222,7 @@ footer p{
             .try-bg-2::before{
                 content: "";
                 position: absolute;
-                background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+                background: linear-gradient(360deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
                 width: 60%;
                 height: 205px;
                 opacity: 9;
@@ -1128,7 +1235,7 @@ footer p{
             .try-bg-3::before{
                 content: "";
                 position: absolute;
-                background: linear-gradient(267.56deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
+                background: linear-gradient(360deg, #232428 22.11%, #5E7CF1 40.73%, #1E6BFF 54.78%, #133E04 69.88%, #9BCFF2 89.56%);
                 width: 40%;
                 height: 305px;
                 opacity: 9;
@@ -1148,7 +1255,7 @@ footer p{
             .try-bg-5::before{
                 content: "";
                 position: absolute;
-                background: linear-gradient(267.56deg, #ac5ec8 22.11%, #e04eca 40.73%, #ec78cb 54.78%, #e643ef 69.88%, #dcdad8 8.56%);
+                background: linear-gradient(360deg, #ac5ec8 22.11%, #e04eca 40.73%, #ec78cb 54.78%, #e643ef 69.88%, #dcdad8 8.56%);
                 width: 100%;
                 height: 205px;
                 opacity: .9;
@@ -1177,7 +1284,8 @@ footer p{
             }
             .try-bg-7{
                 position: relative;
-                left: -200px;  
+                left: -200px;
+               
                 
                 
             }
@@ -1196,6 +1304,7 @@ footer p{
             .try-bg-8{
                 position: relative;
                 left: -200px; 
+               
                 
             }
             .try-bg-8::before{
@@ -1215,13 +1324,14 @@ footer p{
                 position: fixed;
                 left: 0;
                 top: 0;
-                display: block;
+                display: flex;
                 -webkit-backdrop-filter: blur(20px);
                 backdrop-filter:blur(20px) ;
                 width: 100%;
+                justify-content: space-around;
                 z-index: 19;
                 height: 100%;
-                align-items: self-end;
+                align-items: flex-start ;
                 text-align: right;
                 transform: translateX(2000px);
             }
@@ -1232,10 +1342,11 @@ footer p{
                 transition: ease-in 1s;
             }
             .nav-me{
-                margin-right: 30px;
+              
                 color: var(--txtcolor);
                 margin-top: 1px;
             }
+           
             .nav-me a{
                 font-size:28px;
                 color: var(--txtcolor);

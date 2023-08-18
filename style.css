@@ -792,6 +792,7 @@ font-weight: 400;
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+    transform: translateX(-1.3px);
     justify-content: space-evenly;
 }
 
@@ -883,7 +884,7 @@ padding-left: 30px;
 .secondcard{
    position: relative;
    top: -50px;
-   left: 5px;
+   left: 4px;
 }
 .service-card h3{
     font-weight: 800;
@@ -1032,7 +1033,7 @@ footer p{
             padding-left: 0px;
             padding-right: 0px;
          }.brand-img{
-               width: 270px;
+               width: 268.5px;
         }
         .hero h1{
             font-size: 37px;

@@ -9,7 +9,6 @@
     100%{--gradient-angle:360deg}
 }
 
-
 *{
     align-items: center;
     justify-content: center;
@@ -21,6 +20,10 @@
     font-weight: 200;
     list-style-type: none;
 }
+html{
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
 body{
     font-family: 'Nunito', sans-serif;
     align-items: center;
@@ -30,6 +33,8 @@ body{
     letter-spacing: 1px;
     background-color: var(--bgcolor);
     height: 100%;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
     justify-content: center;
 }
 :root{
@@ -45,6 +50,7 @@ body{
     align-items: center;
     justify-content: center;
     padding-right: 25px;
+    overflow: hidden;
     flex-wrap: wrap;
 }
 .navbar{
@@ -495,7 +501,7 @@ flex: 0 0 100% !important;
 
 
 .call-ta{  
-    max-width: 700px;
+    max-width: 7    00px;
     margin-top: -10px;
     z-index: 9;
     color: var(--txtcolor);
@@ -791,6 +797,9 @@ font-weight: 400;
 
 .service{
     margin-top: 80px;
+ 
+
+ 
     color: var(--txtcolor);
     
     
@@ -819,14 +828,18 @@ font-weight: 400;
 
 }
 
+.fit{
+    object-fit:fill;
+}
+
 
 .service-card{
     width: 320px;
     margin-bottom: 50px;
-    align-items: flex-start;
-    justify-content: center;
-   text-align: start !important;
-    padding-top:0px;
+ 
+
+   justify-content: center;
+    padding: auto;
     display: block;
     color: white;
    height: 250px;
@@ -840,12 +853,14 @@ cursor: pointer;
 .service-card i{
    color: white;
    font-size: 15px;
-   padding-right: 10px;
+   margin-right: 1px;
 }
-.card-bottom{
-   position: relative;
-   left: 20px;
+.card-bottom {
+ text-align: start;
+    display: grid;
+  
 }
+
 
 .service-card .hh{
     max-height: 0px;
@@ -868,6 +883,7 @@ padding-left: 30px;
 .secondcard{
    position: relative;
    top: -50px;
+   left: 5px;
 }
 .service-card h3{
     font-weight: 800;
@@ -1006,7 +1022,7 @@ footer p{
         width: 305px;
         height: 150px;
     }
-
+  
     .portfolio-items{
     padding-left:0px;
         padding-right: 0px; 
@@ -1362,4 +1378,5 @@ footer p{
             .ennd a{
                 color: white;
             }
+        
 }

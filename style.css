@@ -39,7 +39,7 @@ body{
 }
 :root{
     --txtcolor:rgb(229, 224, 224);
-    --txxtcolor:rgb(89, 85, 85);
+    --txxtcolor:rgb(15, 11, 11);
     --bgcolor: #17181D;
     --my: #286ef0;
     
@@ -139,7 +139,7 @@ color:var(--txtcolor);
 }
 .hero{
     text-align: center;
-height: 100%;
+    min-height: 350px;
 }
 .submit-request{
     text-align: center;
@@ -309,7 +309,7 @@ cursor: pointer;
 }
 .brand-img{
     border-radius: 20px;
-    width: 90%;
+    width: 600px;
 }
 .normal{
     font-size: 20px;
@@ -1033,8 +1033,7 @@ footer p{
             padding-left: 0px;
             padding-right: 0px;
          }.brand-img{
-               width:100%;
-               object-fit: fill;
+               width: 268.5px;
         }
         .hero h1{
             font-size: 37px;

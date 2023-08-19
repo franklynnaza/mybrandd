@@ -792,7 +792,7 @@ font-weight: 400;
 .d-flex{
     display: flex;
     flex-wrap: wrap;
-    transform: translateX(-1.3px);
+    transform: translateX(-1.5px);
     justify-content: space-evenly;
 }
 
@@ -880,12 +880,9 @@ padding-left: 30px;
 .firstcard{
    position: relative;
    top: -40px;
+   
 }
-.secondcard{
-   position: relative;
-   top: -50px;
-   left: 4px;
-}
+
 .service-card h3{
     font-weight: 800;
     margin-bottom: 7px;

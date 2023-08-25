@@ -23,35 +23,7 @@ faqs.forEach((action) =>{
 })
 
 // JavaScript to handle the testimonial slider
-document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = document.querySelectorAll(".testimonial-card");
-    let currentTestimonialIndex = 0;
-  
-    function showTestimonial(index) {
-      testimonials.forEach((testimonial, i) => {
-        if (i === index) {
-          testimonial.classList.add("active");
-        } else {
-          testimonial.classList.remove("active");
-        }
-      });
-    }
-  
-    function showNextTestimonial() {
-      currentTestimonialIndex++;
-      if (currentTestimonialIndex >= testimonials.length) {
-        currentTestimonialIndex = 0;
-      }
-      showTestimonial(currentTestimonialIndex);
-    }
-  
-    // Show the first testimonial initially
-    showTestimonial(currentTestimonialIndex);
-  
-    // Change testimonial every 5 seconds (adjust as needed)
-    setInterval(showNextTestimonial, 5000);
-  });
-  
+
 
 
 

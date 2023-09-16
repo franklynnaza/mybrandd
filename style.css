@@ -172,6 +172,8 @@ header {
 .submit-request {
     text-align: center;
     margin-top: 50px;
+    transform: translateY(-30px);
+   
 }
 
 .hero h1 {
@@ -306,6 +308,7 @@ header {
     text-align: center;
     background-color: var(--bgcolor);
     z-index: -1;
+    
 }
 
 .why-us {
@@ -596,10 +599,12 @@ header {
 .beside-testimonial {
     color: var(--txtcolor);
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .smaller {
     font-weight: 200;
+    text-align: center !important;
     background: linear-gradient(106.62deg, rgb(0, 255, 234) 6.68%, rgb(186, 44, 184) 82.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -681,11 +686,11 @@ i {
 
 .tried-2 {
     display: flex;
-    height: 400px;
+   
     background-color: var(--bgcolor);
     padding-top: 130px;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .tried {
@@ -812,6 +817,7 @@ h5 {
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 50px;
+    text-align: start;
     max-width: 900px;
 }
 
@@ -825,6 +831,7 @@ h5 {
 }
 
 .procedure-heading h3 {
+    text-align: start;
     background: linear-gradient(90deg, #02fbff, #fc00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -971,7 +978,7 @@ h5 {
 .d-flex {
     display: flex;
     flex-wrap: wrap;
-    transform: translateX(-1.5px);
+    transform: translateX(-1px);
     justify-content: space-evenly;
 }
 
@@ -1024,7 +1031,7 @@ h5 {
     height: 250px;
     border-radius: 15px;
     position: relative;
-    background-color: #18171b;
+    background-color: #211d2e;
     cursor: pointer;
     border: 1px solid var(--txxtcolor);
     text-align: center;
@@ -1089,7 +1096,7 @@ h5 {
     border-radius: inherit;
     top: 0px;
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.69);
     display: flex;
     justify-content: center;
 
@@ -1100,7 +1107,9 @@ h5 {
     overflow-y: hidden !important;
     transition: .5s ease;
 }
-
+.content h4{
+    color: var(--txtcolor);
+}
 .content:hover {
     opacity: 1;
 }
@@ -1109,8 +1118,16 @@ h5 {
     position: relative;
     top: -40px;
     left: 4px;
-
 }
+.content-btn{
+    padding: 8px 15px;
+    background: linear-gradient(90deg,  rgb(111, 1, 162), #035ad4);
+    border-radius: 10px;
+    color: var(--txtcolor);
+    margin-top: 5px;
+  
+}
+
 
 .service-card h3 {
     font-weight: 800;
@@ -1289,13 +1306,18 @@ footer p {
         padding-right: 0px;
     }
 
+    .procedure{
+        display: flex;
+        justify-content: center;
+    }
+
     .testimonial h3 {
         padding-left: 0px;
         padding-right: 0px;
     }
 
     .brand-img{
-        width: 350px;
+        width: 330px;
         }
     
 
@@ -1411,10 +1433,11 @@ footer p {
     }
     .beside-testimonial{
         display: flex;
-        margin-top: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start !important;
+        align-items: center;
+        justify-content: center !important;
     }
 
     .smaller {
@@ -1442,7 +1465,8 @@ footer p {
     }
 
     .container {
-
+    margin-left: 2px;
+    margin-right: 2px;
         width: 250px;
         height: 200px;
         cursor: pointer;
@@ -1489,7 +1513,7 @@ footer p {
     }
 
     .procedure-heading {
-        text-align: center;
+       
         left: 0px;
         padding-left: 2px;
         padding-right: 2px;
@@ -1498,11 +1522,12 @@ footer p {
     .procedure-heading h1 {
         font-size: 35px;
         font-weight: 300;
+        text-align: center !important;
         margin-bottom: 10px;
     }
 
     .procedure-heading h3 {
-
+        text-align: center !important;
         font-weight: 100;
     }
 
@@ -1511,7 +1536,7 @@ footer p {
     }
 
     .service {
-        margin-top: 20px;
+        margin-top: 80px;
     }
 
     .frequent {
@@ -1680,7 +1705,7 @@ footer p {
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         z-index: 19;
         height: 100%;
         align-items: flex-start;
@@ -1696,7 +1721,7 @@ footer p {
     }
 
     .nav-me {
-
+    margin-right: 24px;
         color: var(--txtcolor);
         margin-top: 1px;
     }
@@ -1745,5 +1770,6 @@ footer p {
 }
 .heading-2{
     text-align: start;
+    margin-left: 25px;
 }
 }

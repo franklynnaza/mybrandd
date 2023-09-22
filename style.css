@@ -1023,20 +1023,20 @@ h5 {
     text-align: start;
     display: grid;
 
+    margin-left:;
+
 }
 
 
-.service-card .hh {
-    max-height: 0px;
-    overflow: hidden;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: max-height .5s ease;
+.service-card h3 {
+  
+    font-size: 18px !important;
+   
 }
 
 .service-card h4 {
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(220, 215, 215);
     padding-left: 20px;
 
@@ -1044,8 +1044,17 @@ h5 {
 
 .firstcard {
     position: relative;
-    top: -40px;
+    top: -35px;
 
+}
+.secondcard {
+  
+    margin-top: -25px;
+
+}
+.zerocard{
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -1136,6 +1145,7 @@ font-weight: 500;
     align-items: flex-start;
     width: 100%;
     margin-top: 80px;
+  
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -1242,7 +1252,9 @@ footer p {
 .aside div {
     width: 100px;
 }
-
+.lastimg{
+    margin-top: -20px !important;
+}
 
 
 @media(max-width:1157px) {
@@ -1319,7 +1331,8 @@ footer p {
     }
 
     .service-card {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+       width: 370px;
     }
 
     .why-us {
@@ -1368,6 +1381,7 @@ footer p {
 
     .testimonials {
         padding-top: 30px;
+        z-index: -10;
     }
 
     .testimonials h1 {
@@ -1685,7 +1699,7 @@ footer p {
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         z-index: 19;
         height: 100%;
         align-items: flex-start;
@@ -1701,15 +1715,15 @@ footer p {
     }
 
     .nav-me {
-    margin-right: 24px;
+        margin-right: -10px;
         color: var(--txtcolor);
         margin-top: 1px;
     }
 
     .nav-me a {
-        font-size: 28px;
+        font-size: 23px;
         color: var(--txtcolor);
-        line-height: 2;
+        line-height: 2.5;
     }
 
     .nav-me,

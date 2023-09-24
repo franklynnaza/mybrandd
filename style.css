@@ -1007,7 +1007,7 @@ h5 {
     height: 250px;
     border-radius: 15px;
     position: relative;
-    background-color: #211d2e;
+    background: linear-gradient(135deg, #211d2e, #1c0225);
     cursor: pointer;
     border: 1px solid var(--txxtcolor);
     text-align: center;
@@ -1029,7 +1029,7 @@ h5 {
 
 
 .service-card h3 {
-  
+  font-weight: 500 !important;
     font-size: 18px !important;
    
 }
@@ -1256,6 +1256,52 @@ footer p {
     margin-top: -20px !important;
 }
 
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+   justify-content: flex-start;
+    margin: auto;
+}
+.contact div{
+    width: 350px;
+}
+input,select{
+    background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
+    color: rgb(116, 103, 103) !important;
+    width: 97%;
+    margin: 0px;
+    font-size: 15px;
+    height: 45px;
+   padding-left: 20px;
+   padding-right: 20px;
+   -webkit-appearance:none;
+        appearance: none;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+      
+}
+textarea{
+  
+    background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
+    color: white !important;
+    border: none;
+    font-size: 15px;
+    width: 690px;
+padding: 10px 20px;
+display: flex;
+justify-content: flex-start;
+border-radius: 10px;
+margin-top: 10px;
+}
+.contact .btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+
 
 @media(max-width:1157px) {
     .nav-section i {
@@ -1331,8 +1377,8 @@ footer p {
     }
 
     .service-card {
-        margin-bottom: 30px;
-       width: 370px;
+        margin-bottom: 40px;
+      
     }
 
     .why-us {
@@ -1768,5 +1814,50 @@ footer p {
 }
 .heading-2 h1{
    font-size: 30px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   justify-content: flex-start;
+    margin: auto;
+}
+.contact div{
+    width: 100%;
+}
+input,select{
+    background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
+    color: rgb(116, 103, 103) !important;
+    width: 100%;
+    margin: 0px;
+    font-size: 15px;
+    height: 45px;
+   padding-left: 20px;
+   padding-right: 20px;
+   -webkit-appearance:none;
+        appearance: none;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+      
+}
+textarea{
+  
+    background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
+    color: white !important;
+    border: none;
+    font-size: 15px;
+    width: 100% !important;
+padding: 10px 20px;
+display: flex;
+justify-content: flex-start;
+border-radius: 10px;
+margin-top: 10px;
+}
+.contact .btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    
 }
 }

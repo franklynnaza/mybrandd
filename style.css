@@ -327,6 +327,7 @@ header {
 .brand-img{
     width: 70%;
     height: 300px;
+    border-radius: 15px !important;
     object-fit: contain;
 }
   @keyframes glow {
@@ -368,7 +369,7 @@ header {
 
 .in-pic {
     width: 150px;
-    border-radius: 1px;
+    border-radius: 15px;
     align-items: center;
     justify-content: center;
     object-fit: contain;
@@ -386,7 +387,7 @@ header {
 .what-is h4 {
     line-height: 25px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 20px;
     color: var(--txtcolor);
 }
@@ -404,6 +405,7 @@ header {
 .what-is h3 {
     color: var(--txtcolor);
     text-align: left;
+    font-weight: 100;
 }
 
 .try-bg-3 {
@@ -725,7 +727,7 @@ i {
 .testimonial {
     justify-content: center;
     display: flex;
-    height: 500px !important;
+    height: 400px !important;
     margin-bottom: 10px;
 }
 
@@ -1022,17 +1024,10 @@ h5 {
 .card-bottom {
     text-align: start;
     display: grid;
-
-    margin-left:;
-
 }
 
 
-.service-card h3 {
-  font-weight: 500 !important;
-    font-size: 18px !important;
-   
-}
+
 
 .service-card h4 {
     font-weight: 100;
@@ -1106,7 +1101,7 @@ h5 {
 }
 .content-btn{
     padding: 8px 15px;
-    background: linear-gradient(90deg,  rgb(111, 1, 162), #035ad4);
+    background: linear-gradient(90deg,  rgb(64, 1, 93), #012d6b);
     border-radius: 10px;
     color: var(--txtcolor);
     margin-top: 5px;
@@ -1117,6 +1112,8 @@ font-weight: 500;
 
 
 .service-card h3 {
+
+   
     font-weight: 800;
     margin-bottom: 7px;
     font-size: 15px;
@@ -1262,6 +1259,8 @@ footer p {
     width: 50%;
    justify-content: flex-start;
     margin: auto;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 .contact div{
     width: 350px;
@@ -1275,23 +1274,26 @@ input,select{
     height: 45px;
    padding-left: 20px;
    padding-right: 20px;
+  
    -webkit-appearance:none;
         appearance: none;
         margin-top: 10px;
         border-radius: 10px;
-        border: none;
+
+       border: 1px solid var(--txxtcolor);   
       
 }
 textarea{
   
     background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
     color: white !important;
-    border: none;
+   
     font-size: 15px;
     width: 690px;
 padding: 10px 20px;
 display: flex;
 justify-content: flex-start;
+border: 1px solid var(--txxtcolor);   
 border-radius: 10px;
 margin-top: 10px;
 }
@@ -1343,9 +1345,10 @@ margin-top: 10px;
     }
 
     .brand-img{
-        width: 90%;
+        width: 100%;
         height: 300px;
-        object-fit: contain;
+        border-radius: 15px !important;
+        object-fit:contain;
     }
     .procedure{
         display: flex;
@@ -1410,7 +1413,7 @@ margin-top: 10px;
 
     .my-pic h3 {
         padding-top: 7px;
-        font-weight: 10;
+        font-weight: 500;
         text-align: start;
         font-size: 15px;
     }
@@ -1420,7 +1423,7 @@ margin-top: 10px;
     }
 
     .what-is h4 {
-        font-weight: 100;
+        font-weight: 100 !important;
 
 
     }
@@ -1553,21 +1556,24 @@ margin-top: 10px;
     }
 
     .procedure-heading {
-       
+       margin-top: 0px;
         left: 0px;
         padding-left: 2px;
+     
         padding-right: 2px;
     }
 
     .procedure-heading h1 {
         font-size: 35px;
         font-weight: 300;
-        text-align: center !important;
+        text-align: left !important;
+      
         margin-bottom: 10px;
     }
 
     .procedure-heading h3 {
-        text-align: center !important;
+      
+        text-align: left !important;
         font-weight: 100;
     }
 
@@ -1591,6 +1597,17 @@ margin-top: 10px;
 
     .foot h2 {
         font-weight: 100;
+        font-size: 20px;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #02fbff, #fc00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+    .foot h1 {
+       
+        font-size: 33px;
+        font-weight: 300;
     }
 
     .foot h1,
@@ -1830,7 +1847,9 @@ input,select{
     color: rgb(116, 103, 103) !important;
     width: 100%;
     margin: 0px;
-    font-size: 15px;
+    border: 1px solid var(--txxtcolor);
+    font-size: 17px;
+    font-weight: 400;
     height: 45px;
    padding-left: 20px;
    padding-right: 20px;
@@ -1838,15 +1857,16 @@ input,select{
         appearance: none;
         margin-top: 10px;
         border-radius: 10px;
-        border: none;
+      
       
 }
 textarea{
   
     background: linear-gradient(135deg,  #231f22, rgb(52, 51, 53),  #231f22);
     color: white !important;
-    border: none;
-    font-size: 15px;
+    border: 1px solid var(--txxtcolor);   
+    font-size: 17px;
+    font-weight: 400;
     width: 100% !important;
 padding: 10px 20px;
 display: flex;
